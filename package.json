@@ -1,0 +1,29 @@
+{
+  "name": "DashboardTypescript",
+  "version": "1.0.0",
+  "description": "Simple Github badge using TypeScript, Backbone.js, Github API and CORS",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10",
+    "gulp-shell": "^0.4.1",
+    "gulp-tsc": "^0.9.5",
+    "run-sequence": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laurentkempe/DashboardTypescriptGithub.git"
+  },
+  "author": "Laurent Kempé <laurent.kempe@techheadbrothers.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laurentkempe/DashboardTypescriptGithub/issues"
+  },
+  "homepage": "https://github.com/laurentkempe/DashboardTypescriptGithub"
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-responsive.min.css">-->
+
+</head>
+<body>
+
+<div class="user">
+    <script id="userTemplate" type="text/template">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="img-responsive img-thumbnail" src='<%= avatar_url %>' />
+            </a>
+            <div class="media-body">
+                <h2 class="media-heading"><span><%= name %></span></h2>
+                <p><i class="glyphicon glyphicon-user"></i> <%= login %></p>
+                <div><i class="glyphicon glyphicon-inbox"></i> <%= company %></div>
+                <div><i class="glyphicon glyphicon-home"></i> <%= location %></div>
+                <div><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:<%= email %>"> <%= email %></a></div>
+                <div><i class="glyphicon glyphicon-globe"></i> <a href="<%= blog %>"><%= blog %></a></div>
+                <div><i class="glyphicon glyphicon-circle-arrow-right"></i> Joined on <%= this.model.joinedDate() %></div>
+            </div>
+        </div>
+
+    </script>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/underscore/underscore.js"></script>
+<script src="lib/backbone/backbone-min.js"></script>
+<script src="scripts/models/user.js"></script>
+<script src="scripts/views/user.js"></script>
+<script src="scripts/approuter.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
